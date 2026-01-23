@@ -1,0 +1,2 @@
+# GameScope
+Game recommendation engine
