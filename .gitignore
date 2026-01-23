@@ -1,0 +1,9 @@
+# Ignore environment variable files
+.env
+
+# Ignore virtual environment directories
+venv/
+
+# Ignore output directory (Use to add files for local exec), but keep .gitkeep
+out/*
+!out/.gitkeep
