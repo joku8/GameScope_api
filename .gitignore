@@ -9,4 +9,4 @@ out/*
 !out/.gitkeep
 
 # Ignore NumPy binary files
-.npy
+*.npy
