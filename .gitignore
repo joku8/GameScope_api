@@ -7,3 +7,6 @@ venv/
 # Ignore output directory (Use to add files for local exec), but keep .gitkeep
 out/*
 !out/.gitkeep
+
+# Ignore NumPy binary files
+.npy
