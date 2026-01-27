@@ -1,6 +1,6 @@
 # GameScope - Project Roadmap
 
-## Phase 1: Data Collection & Exploratory Analysis
+## Phase 0+1: Data Collection & Exploratory Analysis
 
 **Goal:** Build a clean, unified dataset and understand video game landcape through visualization.
 
@@ -25,6 +25,7 @@
 ### Outcome
 
 A reproducible dataset and visual understanding of how games relate to each other.
+Simple machine learning groupings and clusterings
 
 ---
 
@@ -74,3 +75,69 @@ Users can see both what is recommended and why. Probobly going to be some api...
 ### Outcome
 
 The system learns transparently from user experience without retraining opaque models.
+
+---
+
+## Phase 4: Frontend and User Interface
+
+**Goal:** Deploy a user-facing interface for GameScope that makes recommendations understandable, actionable, and improvable through direct user feedback.
+
+### Core Work
+
+- Capture structured feedback after users try recommended games
+- Incrementally adjust user preference weights based on:
+  - Positive signals (enjoyed, finished, would recommend)
+  - Negative signals (bounced early, disliked mechanics/theme)
+- Track and compare:
+  - System confidence in a recommendation
+  - Actual user-perceived fit
+
+### MVP Deliverables
+
+- Authentication
+  - Sign up, login, logout, persist session
+- User game library
+  - Collects info about played games (specific fields, tbd)
+- Game details page
+  - Pull info from igdb and also display user inputted fields (allow edit)
+- Game recommendations
+  - Pulled from backend
+- Feedback on recommendations
+  - Influences preference weights in backend
+
+### Outcome
+
+Create a frontend for the backend systems implemented in previous phases. Should enable game recommendations based on user tastes (ML) and allow indexing for played games.
+
+---
+
+## Phase 5: Cross-User Signals & Collaborative Influence
+
+**Goal:** Enhance GameScope recommendations by incorporating anonymized patterns from other users with similar tastes, while preserving interpretability and user control.
+
+### Core Work
+
+- Identify taste similarity between users based on:
+  - Library overlap
+  - Feedback patterns
+  - Preference weight vectors
+- Blend collaborative signals with existing content-based recommendations
+- Track when recommendations are influenced by:
+  - Personal history
+  - Similar users
+  - Hybrid signals
+
+### MVP Deliverables
+
+- Similar-user scoring (backend-generated)
+- Hybrid recommendation feed:
+  - Backend + collaborative influence
+- Lightweight explanation tag:
+  - “Recommended because players with similar tastes liked this”
+- Safeguards:
+  - No direct user-to-user data exposure
+- Fully anonymized aggregation
+
+### Outcome
+
+GameScope recommendations improve beyond a single-user model, leveraging collective taste patterns while remaining transparent, privacy-preserving, and explainable.
