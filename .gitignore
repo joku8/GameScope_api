@@ -10,3 +10,7 @@ out/*
 
 # Ignore NumPy binary files
 *.npy
+
+# Ignore workspace files
+.kiro
+.vscode
