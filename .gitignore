@@ -14,3 +14,9 @@ out/*
 # Ignore workspace files
 .kiro
 .vscode
+
+# Ignore pycache directories
+__pycache__/
+
+# Ignore cached files
+cache/
